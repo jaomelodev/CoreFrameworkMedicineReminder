@@ -65,8 +65,8 @@ public class OnboardingView: UIView {
             
             messageLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             messageLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            messageLabel.leadingAnchor.constraint(equalTo: leftAnchor, constant: Metrics.p12),
-            messageLabel.trailingAnchor.constraint(equalTo: rightAnchor, constant: -Metrics.p12),
+            messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Metrics.p12),
+            messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Metrics.p12),
             
             nextButton.topAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: Metrics.p16),
             nextButton.centerXAnchor.constraint(equalTo: centerXAnchor),
