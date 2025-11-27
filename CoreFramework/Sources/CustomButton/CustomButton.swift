@@ -7,17 +7,17 @@
 
 import UIKit
 
-protocol CustomButtonDelegate: AnyObject {
+public protocol CustomButtonDelegate: AnyObject {
     func buttonAction()
 }
 
-class CustomButton: UIButton {
+public class CustomButton: UIButton {
     weak var delegate: CustomButtonDelegate?
     private var iconPosition: NSLayoutConstraint.Axis?
 
     private var customWidth: CGFloat?
 
-    init(title: String, backgroundColor: UIColor = Colors.primaryRedBase) {
+    public init(title: String, backgroundColor: UIColor = Colors.primaryRedBase) {
         super.init(frame: .zero)
         setupButton(
             title: title,
@@ -27,7 +27,7 @@ class CustomButton: UIButton {
         )
     }
 
-    init(
+    public init(
         title: String,
         icon: UIImage,
         iconPosition: NSLayoutConstraint.Axis,
@@ -42,7 +42,7 @@ class CustomButton: UIButton {
         )
     }
 
-    init(
+    public init(
         title: String,
         width: CGFloat,
         backgroundColor: UIColor = Colors.primaryRedBase
