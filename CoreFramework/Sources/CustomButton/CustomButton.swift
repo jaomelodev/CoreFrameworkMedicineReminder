@@ -12,7 +12,7 @@ public protocol CustomButtonDelegate: AnyObject {
 }
 
 public class CustomButton: UIButton {
-    weak var delegate: CustomButtonDelegate?
+    public weak var delegate: CustomButtonDelegate?
     private var iconPosition: NSLayoutConstraint.Axis?
 
     private var customWidth: CGFloat?
